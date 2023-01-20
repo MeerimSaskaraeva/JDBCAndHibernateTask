@@ -25,6 +25,7 @@ public class User {
         this.age = age;
     }
 
+
     public Long getId() {
         return id;
     }
@@ -57,4 +58,13 @@ public class User {
         this.age = age;
     }
 
+    @Override
+    public String toString() {
+        return "\nUser{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", age=" + age +
+                '}';
+    }
 }
